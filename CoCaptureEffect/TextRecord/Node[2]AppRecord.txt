@@ -1,11 +1,5 @@
 Search()
 
-BuildCahnnel(11b , 5.0 , 0.5 , 0.0 , 0.0)
-
-Schedule(1.0 , 20.0)
-
-Search()
-
 BuildCahnnel(11b , 5.0 , 0.4045084971874737 , 0.29389262614623657 , 0.0)
 
 Schedule(1.0 , 20.0)
