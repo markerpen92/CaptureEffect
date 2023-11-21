@@ -128,7 +128,7 @@ void UDP_LossRateMeasure(FlowMonitorHelper* flowmon , Ptr<FlowMonitor> monitor ,
 
 uint32_t GetRecordFileAmount()
 {
-    const char* path = "/home/user/Desktop/NS3_TMP/CPUOS_Capture/ApplicationRecord/BinaryRecord/";
+    const char* path = "./ApplicationRecord/BinaryRecord/";
     DIR* dir;
     struct dirent* entry;
     uint32_t count = 0;
@@ -151,7 +151,7 @@ void SetNodeInfo(uint32_t nSta, double* NodeRate, double (*NodesLocatioon)[3], d
 {
     for(uint32_t i=0 ; i<nSta ; i++)
     {
-      std::string filePath = "/home/user/Desktop/NS3_TMP/CPUOS_Capture/CoCaptureEffect/TextRecord/Node[" + std::to_string(i+1) + "]AppRecord.txt";
+      std::string filePath = "./CoCaptureEffect/TextRecord/Node[" + std::to_string(i+1) + "]AppRecord.txt";
 
       std::ifstream ReadFile(filePath);
       if (!ReadFile.is_open())

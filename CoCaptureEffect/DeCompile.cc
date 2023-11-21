@@ -9,7 +9,7 @@
 #include <bitset>
 
 void DeCompiler::Decode(int nodeId) {
-    std::string binaryFilePath = "/home/user/Desktop/NS3_TMP/CPUOS_Capture/ApplicationRecord/BinaryRecord/Node[" + std::to_string(nodeId) + "]BinaryRecord.txt";
+    std::string binaryFilePath = "./ApplicationRecord/BinaryRecord/Node[" + std::to_string(nodeId) + "]BinaryRecord.txt";
     std::string utf8FilePath = "./TextRecord/Node[" + std::to_string(nodeId) + "]AppRecord.txt";
 
     std::ifstream binaryFile(binaryFilePath, std::ios::binary);
@@ -42,7 +42,7 @@ void DeCompiler::Decode(int nodeId) {
 }
 
 uint32_t DeCompiler::RequestAmount() {
-    const char* folderPath = "/home/user/Desktop/NS3_TMP/CPUOS_Capture/ApplicationRecord/BinaryRecord/";
+    const char* folderPath = "./ApplicationRecord/BinaryRecord/";
     uint32_t fileCount = 0;
 
     DIR* dir;
